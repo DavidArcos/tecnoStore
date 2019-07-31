@@ -1,0 +1,22 @@
+slider pantalla principal
+descuentos
+carrito de compras
+categorias
+mostrar vista previa del producto
+vista detallada
+puntación del producto
+comentarios
+buscadores
+login
+Mi perfil
+mis pedidos
+redes sociales
+
+
+categorias
+moviles (celulares y tabletas)
+multimedia (camara,pantallas)
+videojuegos (consolas,juegos,controles)
+computo (laptop)
+electronica (audio)
+accesorios (cables de audio, audifonos)

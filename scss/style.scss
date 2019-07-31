@@ -1,0 +1,32 @@
+$bg-color: #00838f;
+$color-text-main: #FFFFFF;
+$logo-h: 100%;
+$logo-w: 100%;
+
+$slide-img-w: 100vw;
+$slide-img-h: 30vw;
+// menu principal
+
+.bg-main{
+    background-color: $bg-color;
+}
+
+.img-logo{
+    width: $logo-w;
+    height: $logo-h;
+}
+.img-slide{
+    width: $slide-img-w;
+}
+.carousel-item{
+    height: $slide-img-h;
+    width: $slide-img-w;
+}
+/* Este es para los elementos en general */
+.navbar-light .navbar-nav .nav-link {
+    color: $color-text-main;
+    }
+/*  Este es para el elemento activo lo puedes omitir si asi deseas */
+.navbar-light .navbar-nav .active>.nav-link  {
+    color: $color-text-main;
+}
