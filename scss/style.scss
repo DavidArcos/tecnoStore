@@ -1,12 +1,21 @@
-$bg-color: #00838f;
+$bg-color: #ff3d00;
+$bg-body: #d9dadb;
+$bg-color-bestSale: #40c4ff;
 $color-text-main: #FFFFFF;
 $logo-h: 100%;
 $logo-w: 100%;
 
 $slide-img-w: 100vw;
 $slide-img-h: 30vw;
-// menu principal
+$size-icon: 20px;
+$padding-top-main: 2%;
+$padding-cards: 0.5%;
 
+$font-main: bold;
+// menu principal
+body{
+    background-color: $bg-body;
+}
 .bg-main{
     background-color: $bg-color;
 }
@@ -25,8 +34,25 @@ $slide-img-h: 30vw;
 /* Este es para los elementos en general */
 .navbar-light .navbar-nav .nav-link {
     color: $color-text-main;
-    }
+    font-weight: $font-main;
+}
 /*  Este es para el elemento activo lo puedes omitir si asi deseas */
 .navbar-light .navbar-nav .active>.nav-link  {
     color: $color-text-main;
+    font-weight: $font-main;
+}
+.container-main{
+    padding-top: $padding-top-main;
+    background-color: $color-text-main;
+}
+.card-column{
+    padding: $padding-cards;
+}
+
+.icon-io{
+    font-size: $size-icon;
+}
+.best-sale{
+    background-color: $bg-color-bestSale;
+    font-weight: $font-main;
 }
