@@ -1,5 +1,6 @@
 $bg-color: #ff3d00;
 $bg-body: #d9dadb;
+$bg-color-bestSale: #40c4ff;
 $color-text-main: #FFFFFF;
 $logo-h: 100%;
 $logo-w: 100%;
@@ -50,4 +51,8 @@ body{
 
 .icon-io{
     font-size: $size-icon;
+}
+.best-sale{
+    background-color: $bg-color-bestSale;
+    font-weight: $font-main;
 }
