@@ -1,3 +1,7 @@
+body {
+  background-color: #bbdefb;
+}
+
 .bg-main {
   background-color: #00838f;
 }
@@ -24,6 +28,14 @@
 /*  Este es para el elemento activo lo puedes omitir si asi deseas */
 .navbar-light .navbar-nav .active > .nav-link {
   color: #FFFFFF;
+}
+
+.container-main {
+  padding-top: 2%;
+}
+
+.card-column {
+  padding: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
