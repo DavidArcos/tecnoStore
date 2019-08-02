@@ -7,14 +7,23 @@ $logo-w: 100%;
 
 $slide-img-w: 100vw;
 $slide-img-h: 30vw;
-$size-icon: 20px;
+$size-icon: 30px;
 $padding-top-main: 2%;
 $padding-cards: 0.5%;
+
+$color-footer: #006064;
+$color-text-footer: #FFFFFF;
+$padding-footer-section: 2%;
+$bg-color-btn-footer: $bg-color;
+$color-btn-footer: #FFFFFF;
 
 $font-main: bold;
 // menu principal
 body{
     background-color: $bg-body;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .bg-main{
     background-color: $bg-color;
@@ -55,4 +64,22 @@ body{
 .best-sale{
     background-color: $bg-color-bestSale;
     font-weight: $font-main;
+}
+footer{
+    background-color: $color-footer;
+    flex: 0 0 auto;
+    margin: 0;
+    padding: $padding-footer-section;
+}
+.footer{
+    margin: 0;
+}
+
+.footer-section{
+    color: $color-text-footer;
+    padding: $padding-footer-section;
+}
+.btn-send-sub{
+    background-color: $bg-color-btn-footer;
+    color: $color-btn-footer;
 }
