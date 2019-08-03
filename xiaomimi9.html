@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/gallery.js"></script>
+    
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/gallerystyle.css">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 
     <title>Document</title>
@@ -16,7 +22,7 @@
 <body>
 
     <div class="container">
-        <div class="row border bg-light" style="height: 75px">
+        <div class="row" style="height: 75px">
             <div class="col-6">
 
             </div>
@@ -25,65 +31,21 @@
             </div>
 
         </div>
-       <div class="row border bg-light" style="height: 650px">
-            <div class="col-6 border bg-light">
-                 <!-- Container for the image gallery -->
-                        <div class="container">
-
-                                <!-- Full-width images with number text -->
-                                <div class="mySlides">
-                                    <div class="numbertext">1 / 4</div>
-                                    <img src="img/xiaomi9.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                 <div class="numbertext">2 / 4</div>
-                                    <img src="img/xiaomiMi92.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                    <div class="numbertext">3 / 4</div>
-                                    <img src="img/xiaomi93.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                    <div class="numbertext">4 / 4</div>
-                                    <img src="img/xiaomiMi91.jpg" style="width:100%">
-                                </div>                                                       
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>                            
-                                <!-- Image text 
-                                <div class="caption-container">
-                                    <p id="caption"></p>
-                                </div>-->                            
-                                <!-- Thumbnail images -->
-                                <div class="row justify-content">
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomi9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomiMi92.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomi93.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomiMi91.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mi9">
-                                        </div>
-                                        <!--<div class="column">
-                                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                                        </div>-->
-                                    </div>
-                        </div> 
-
+       <div class="row" style="height: 650px">
+            <div class="col-6">
+                <!-- Add images to <div class="fotorama"></div> -->
+                    <div class="fotorama" data-nav="thumbs">
+                        <img src="img/xiaomi9.jpg">
+                        <img src="img/xiaomiMi91.jpg">
+                        <img src="img/xiaomiMi92.jpg">
+                        <img src="img/xiaomi93.jpg">
+                        <img src="img/xiami94.jpg">
+                    </div>
+  
             </div>
            
-            <div class="col-6  border bg-light">
-                <div class="row h-15 border bg-light">
+            <div class="col-6 ">
+                <div class="row h-15">
                     <div class="col">
                             <h2>
                                     Xiaomi Mi 9 64Gb 6Gb Ram -Negro piano
@@ -91,7 +53,7 @@
                     </div>
 
                 </div>
-                <div class="row border bg-light" style="height: 500px">
+                <div class="row" style="height: 500px">
                     <div class="col h-100 text-black-50">
                         <p>
                                 Pantalla de 6.39 pulgadas con resolución de 2340 x 1080 pixeles
@@ -112,15 +74,15 @@
                     </div>
 
                 </div>
-                <div class="row h-15 border bg-light  align-bottom">
+                <div class="row h-15  align-bottom">
                         <div class="col">
                             <div class="row">
-                                <div class="col">
+                                <div class="col d-flex d-inline">
                                         <span class="precio">$6,899.00</span>
                                 </div>
-                                <div class="col d-flex flex-row-reverse">
+                                <div class="col flex-row-reverse">
                                         <form>
-                                                <div class="form-row align-items-center">
+                                                <div class="form-row  d-flex d-inline">
                                                   <div class="col-auto my-1">
                                                     <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Cantidad</label>
                                                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -135,10 +97,10 @@
                                                   </div>
                                                  
                                                   <div class="col-auto my-1">
-                                                        <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                                        <button type="button" class="btn btn-success">Agregar</button>
                                                   </div>
                                                 </div>
-                                              </form>
+                                            </form>
                                        
                                 </div>
                             </div>
@@ -150,7 +112,7 @@
             </div>
             
         </div>
-        <div class="row border" style="height: 450px">
+        <div class="row">
             <div class="col justify-content-start">
             <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -213,7 +175,7 @@
                   </div>
             </div>      
         </div>
-        <div class="row border"  style="height: 250px">
+        <div class="row border">
             <div class="col-2">
 
             </div>

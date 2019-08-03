@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/gallery.js"></script>
+    
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/gallerystyle.css">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 
     <title>Document</title>
@@ -16,7 +22,7 @@
 <body>
 
     <div class="container">
-        <div class="row border bg-light" style="height: 75px">
+        <div class="row" style="height: 75px">
             <div class="col-6">
 
             </div>
@@ -25,102 +31,51 @@
             </div>
 
         </div>
-       <div class="row border bg-light" style="height: 650px">
-            <div class="col-6 border bg-light">
-                 <!-- Container for the image gallery -->
-                        <div class="container">
-
-                                <!-- Full-width images with number text -->
-                                <div class="mySlides">
-                                    <div class="numbertext">1 / 4</div>
-                                    <img src="img/xiaomi9.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                 <div class="numbertext">2 / 4</div>
-                                    <img src="img/xiaomiMi92.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                    <div class="numbertext">3 / 4</div>
-                                    <img src="img/xiaomi93.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides">
-                                    <div class="numbertext">4 / 4</div>
-                                    <img src="img/xiaomiMi91.jpg" style="width:100%">
-                                </div>                                                       
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>                            
-                                <!-- Image text 
-                                <div class="caption-container">
-                                    <p id="caption"></p>
-                                </div>-->                            
-                                <!-- Thumbnail images -->
-                                <div class="row justify-content">
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomi9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomiMi92.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomi93.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mi9">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img/xiaomiMi91.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mi9">
-                                        </div>
-                                        <!--<div class="column">
-                                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                                        </div>
-                                        <div class="column">
-                                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                                        </div>-->
-                                    </div>
-                        </div> 
-
+       <div class="row" style="height: 650px">
+            <div class="col-6">
+                <!-- Add images to <div class="fotorama"></div> -->
+                    <div class="fotorama" data-nav="thumbs">
+                        <img src="img/laptopzeph.jpg">
+                        <img src="img/laptopzeph1.jpg">
+                        <img src="img/laptopzeph2.jpg">
+                        <img src="img/laptopzeph4.jpg">
+                        <img src="img/laptopzeph.jpg">
+                    </div>
+  
             </div>
            
-            <div class="col-6  border bg-light">
-                <div class="row h-15 border bg-light">
+            <div class="col-6 ">
+                <div class="row h-15">
                     <div class="col">
                             <h2>
-                                    Xiaomi Mi 9 64Gb 6Gb Ram -Negro piano
+                                Latop Zephyrus S Ultra Slim Gaming Laptop, GTX 1070 | 512G SSD, Negro, 15-15.99 inches 
                             </h2>
                     </div>
 
                 </div>
-                <div class="row border bg-light" style="height: 500px">
+                <div class="row" style="height: 500px">
                     <div class="col h-100 text-black-50">
                         <p>
-                                Pantalla de 6.39 pulgadas con resolución de 2340 x 1080 pixeles
-                                Procesador Snapdragon 855 de 2.84GHz
-                                Almacenamiento interno de 64GB (no expandible)
-                                Memoria RAM de 6GB
-                                Cámara trasera triple de 48+12+16MP y frontal de 20MP
-                                Lector de huella digital en pantalla
-                                Batería de 3 mil 300 mAh
-                                Dual SIM
-                                Conoce y haz tuyo uno de los principales equipos de Xiaomi, 
-                                el cual integra una serie de características importantes, como un lector de huellas digitales en pantalla, 
-                                además de una triple cámara trasera para que puedas capturar todo lo que quieras con la mejor calidad.
-                                Garantía de 12 meses contra defectos de fábrica
+                            Pantalla tipo Full HD de 15.6 "y alta frecuencia 144Hz 3ms IPS con bisel delgado de 6.5 mm
+                            Nvidia GeForce GTX 1070 8GB GDDR5 * (con tecnología Max Q)
+                            Procesador Intel Core i7-8750H de 8ta generación (hasta 3.9GHz)
+                            0.62 "de espesor, 4.6 lbs. Computadora portátil para juegos con cuerpo de aleación de magnesio de grado
+                             militar ultraportátil con cubierta de primera calidad fabricada en aluminio sólido 
 
                         </p>
                         <span class="badge badge-pill badge-info">Disponible para entrega express</span>
                     </div>
 
                 </div>
-                <div class="row h-15 border bg-light  align-bottom">
+                <div class="row h-15  align-bottom">
                         <div class="col">
                             <div class="row">
-                                <div class="col">
-                                        <span class="precio">$6,899.00</span>
+                                <div class="col d-flex d-inline">
+                                        <span class="precio">$26,589.00</span>
                                 </div>
-                                <div class="col d-flex flex-row-reverse">
+                                <div class="col flex-row-reverse">
                                         <form>
-                                                <div class="form-row align-items-center">
+                                                <div class="form-row  d-flex d-inline">
                                                   <div class="col-auto my-1">
                                                     <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Cantidad</label>
                                                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -135,10 +90,10 @@
                                                   </div>
                                                  
                                                   <div class="col-auto my-1">
-                                                        <button type="button" class="btn btn-success">Agregar al carrito</button>
+                                                        <button type="button" class="btn btn-success">Agregar</button>
                                                   </div>
                                                 </div>
-                                              </form>
+                                            </form>
                                        
                                 </div>
                             </div>
@@ -150,7 +105,7 @@
             </div>
             
         </div>
-        <div class="row border" style="height: 450px">
+        <div class="row">
             <div class="col justify-content-start">
             <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -197,23 +152,23 @@
                     </div>
                     <div class="tab-pane fade" id="nav-especs" role="tabpanel" aria-labelledby="nav-especs-tab">
                            <span class="text-black-50">
-                                Pantalla de 5.97 pulgadas 2340 x 1080 pixeles Full HD+<br>
-                                Corning Gorilla Glass 5<br>
-                                Procesador Snapdragon 712 de 2.3GHz<br>
-                                Almacenamiento interno de 64GB (No expandible)<br>
-                                Memoria RAM de 6GB<br>
-                                Cámara trasera triple de 48MP (f/1.75 wide angle) + 13MP (f/2.4 ultra wide angle) + 8MP ((f/2.4 telephoto)<br>
-                                Cámara frontal de 20MP<br>
-                                Desbloqueo por huella digital en pantalla<br>
-                                Batería de 3070 mAh<br>
-                                Android 9.0 Pie con MIUI 10<br>
+                            Durante más de una década, ASUS ROG PC gaming Laptop ha canalizado su pasión por el juego para crear productos innovadores y trabajar
+                             estrechamente con los equipos de e-Sports para garantizar que tengan las herramientas adecuadas para alcanzar la victoria. 
+                             Descargo de responsabilidad: Activision call of Duty: Black OPS 4 códigos de juego ofrecidos - oferta válida 09/10 / 18–2 / 28/19 o hasta agotar existencias.
+                              El último día para canjear el código ASUS es el 10/03/19 o hasta agotar existencias. 
+                              El período de canje para reclamar los códigos de juego de activación de Activision Duty: Black OPS 4 ("Código de Activision") finalizará el 12/04/19. 
+                              La compra del producto elegible y las reclamaciones correspondientes deben realizarse en su país de residencia. Si devuelve el producto, 
+                              ASUS se reserva el derecho de cobrarle a su MSRP como Call of Duty: Black OPS 4, activación del pago del código del juego. 
+                              ASUS se reserva el derecho de cambiar los detalles de la promoción sin previo aviso.
+                               El código ASUS y la llamada oficial de Duty: Black OPS 4, códigos de juego de activación son para uso exclusivo de la promoción de ASUS;
+                                no para la reventa. Preguntas frecuentes y términos y condiciones completos disponibles en el sitio oficial de ASUS. 
 
                            </span>
                     </div>
                   </div>
             </div>      
         </div>
-        <div class="row border"  style="height: 250px">
+        <div class="row border">
             <div class="col-2">
 
             </div>
