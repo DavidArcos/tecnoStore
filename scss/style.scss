@@ -4,6 +4,7 @@ $bg-color-bestSale: #40c4ff;
 $color-text-main: #FFFFFF;
 $logo-h: 100%;
 $logo-w: 100%;
+$bg-cart-payment: #212121;
 
 $slide-img-w: 100vw;
 $slide-img-h: 30vw;
@@ -55,6 +56,11 @@ body{
 .container-main{
     padding-top: $padding-top-main;
     background-color: $color-text-main;
+}
+.container-cart{
+    padding-top: $padding-top-main;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .card-column{
     padding: $padding-cards;
@@ -117,3 +123,12 @@ input[type = "radio"]{ display:none;}
 label:hover{color:$color-stars;}
 
 input[type = "radio"]:checked ~ label{color:$color-stars;}
+
+.cart-head{
+    background-color: $bg-body;
+}
+.cart-payment{
+    background-color: $bg-cart-payment;
+    color: $color-text-main;
+    font-weight: $font-main;
+}
