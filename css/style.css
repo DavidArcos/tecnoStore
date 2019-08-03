@@ -60,5 +60,20 @@ body {
   font-weight: bold;
 }
 
+.revstar {
+  width: 100px;
+  height: 20px;
+}
 
+.precio {
+  text-align: left;
+  color: red;
+  font-size: 19px;
+}
+
+.descripcionmodal {
+  text-align: left;
+  color: gray;
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */

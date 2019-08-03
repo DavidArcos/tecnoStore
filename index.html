@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+     <!-- jQuery 1.8 or later, 33 KB -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+     <!-- Fotorama from CDNJS, 19 KB -->
+     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 <body>
     <div class="cart">
@@ -33,6 +38,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#xiaomimodal">modal xiaomi</button>
           </form>
         </div>
     </nav>
@@ -129,7 +135,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 card-column">
             <div class="card shadow p-3 mb-5 bg-white rounded h-100">
-              <img href="xiaomimi9.html" src="img/xiaomi9.jpg" class="card-img-top" alt="xiaomi9">
+              <img href="#xiaomimodal" src="img/xiaomi9.jpg" class="card-img-top" alt="xiaomi9">
               <div class="card-body card-body-product">
                   <a href="xiaomimi9.html"><h5 class="card-title">Xiaomi 9</h5></a>
                   <form>
@@ -198,6 +204,73 @@
           </div>
       </div>
     </div>
+
+<!-- modal xiaomi -->
+
+<!-- Modal -->
+<div class="modal fade" id="xiaomimodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Xiaomi Mi 9 64Gb 6Gb Ram -Negro piano</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <div class="row d-flex flex-row">
+             <div class="col-6 col-md-6">
+                <!-- Add images to <div class="fotorama"></div> -->
+                <div class="fotorama" data-nav="thumbs">
+                    <img src="img/xiaomi9.jpg">
+                    <img src="img/xiaomiMi91.jpg">
+                    <img src="img/xiaomiMi92.jpg">
+                    <img src="img/xiaomi93.jpg">
+                    <img src="img/xiami94.jpg">
+                </div>
+             </div>             
+             <div class="col-6 col-md-6 d-flex">
+               <div class="row">
+                 <div class="col">                   
+                    <img class="revstar" src="img/fivestars.jpeg">                   
+                 </div>
+                 <div class="row">
+                    <div class="col">                                      
+                       <span class="precio">$6,899.00</span>
+   
+                    </div>
+                 <div class="row">
+                   <div class="col h-50">
+                      <p class="descripcionmodal">
+                          Pantalla de 6.39 pulgadas con resolución de 2340 x 1080 pixeles<br>
+                          Procesador Snapdragon 855 de 2.84GHz<br>
+                          Almacenamiento interno de 64GB (no expandible)<br>
+                          Memoria RAM de 6GB<br>
+                          Cámara trasera triple de 48+12+16MP y frontal de 20MP<br>
+                          Lector de huella digital en pantalla<br>
+                          Batería de 3 mil 300 mAh<br>
+                          Dual SIM<br>
+                        
+
+                     </p>
+                  <span class="badge badge-pill badge-success">En stock</span>
+                   </div>
+                 </div>   
+                 
+               </div>
+
+             </div>
+           </div>
+           </div>
+
+     
+      </div>
+    </div>
+  </div>
+
+
+<!-- modal xiaomi -->
+
     <footer>
       <div class="container">
         <div class="row">
