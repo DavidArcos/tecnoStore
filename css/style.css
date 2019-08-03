@@ -41,6 +41,12 @@ body {
   background-color: #FFFFFF;
 }
 
+.container-cart {
+  padding-top: 2%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .card-column {
   padding: 0.5%;
 }
@@ -127,6 +133,16 @@ label:hover {
 
 input[type=radio]:checked ~ label {
   color: #ffc107;
+}
+
+.cart-head {
+  background-color: #d9dadb;
+}
+
+.cart-payment {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

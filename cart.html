@@ -12,11 +12,6 @@
     
 </head>
 <body>
-    <div class="cart">
-        <ul>
-          <li><a href="cart.html" class="ion-md-cart">  Tienes 1 Articulo(s) - $1,539.00</a></li>
-        </ul>
-      </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-main">
         <span class="navbar-brand mb-0 h1"><img src="img/tecnostorelogo.png" width="40" height="40" alt=""></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +32,36 @@
         </div>
     </nav>
     <div class="container container-main">
-        
+      <div class="card col-sm-12 col-md-12 col-lg-12 cart-head">
+        <div class="card-body">
+          <h6>El envío gratuito.</h6>
+          <p>se aplica a pedidos con un valor de $4,000 o más</p>
+        </div>
+      </div>
+      <div class="row container-cart">
+        <div class="card border-light p-0 col-sm-12 col-md-8 col-lg-9 ">
+          <div class="card-header cart-payment"><h6>TU CARRITO (1)</h6></div>
+          <div class="row cart-head m-0 p-1">
+            <div class="col-sm-5 col-md-5 col-lg-4 d-flex justify-content-center"><img src="img/44samsung.jpg" class="card-img-left img-thumbnail"></div>
+            <div class="col-sm-7 col-md-7 col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">TV UHD Samsumng</h5>
+                <p class="card-text">Color: Negro <br>Cant.: 1 Pieza <br>Precio: $1,539.00</p>
+                <button class="btn btn-outline-secondary">Eliminar</button> <button class="btn btn-outline-secondary">Editar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-light p-0 col-sm-12 col-md-4 col-lg-3">
+          <div class="card-header cart-payment"><h6>RESUMEN</h6></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between cart-payment"><p>Subtotal:</p><p>$1,539.00</p></li>
+            <li class="list-group-item d-flex justify-content-between cart-payment"><p>Envío:</p><p>$200.00</p></li>
+            <li class="list-group-item d-flex justify-content-between cart-payment"><p>Importe:</p><p>$1,739.00</p></li>
+            <li class="list-group-item d-flex justify-content-between cart-payment"><button class="btn btn-send-sub">Pagar</button></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="container">
