@@ -6,7 +6,7 @@ body {
 }
 
 .bg-main {
-  background-color: #ff3d00;
+  background-color: #bb1542;
 }
 
 .img-logo {
@@ -59,7 +59,7 @@ body {
 }
 
 footer {
-  background-color: #006064;
+  background-color: #239f95;
   flex: 0 0 auto;
   margin: 0;
   padding: 2%;
@@ -75,7 +75,7 @@ footer {
 }
 
 .btn-send-sub {
-  background-color: #ff3d00;
+  background-color: #bb1542;
   color: #FFFFFF;
 }
 
@@ -97,7 +97,7 @@ footer {
 .cart ul li a {
   display: inline-block;
   color: #fff;
-  background: #ff3d00;
+  background: #bb1542;
   padding: 10px 15px;
   text-decoration: none;
   -webkit-transition: all 500ms ease;
