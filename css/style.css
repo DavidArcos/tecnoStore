@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #d9dadb;
   height: 100%;
@@ -7,7 +6,7 @@ body {
 }
 
 .bg-main {
-  background-color: #ff3d00;
+  background-color: #bb1542;
 }
 
 .img-logo {
@@ -24,13 +23,11 @@ body {
   width: 100vw;
 }
 
-/* Este es para los elementos en general */
 .navbar-light .navbar-nav .nav-link {
   color: #FFFFFF;
   font-weight: bold;
 }
 
-/*  Este es para el elemento activo lo puedes omitir si asi deseas */
 .navbar-light .navbar-nav .active > .nav-link {
   color: #FFFFFF;
   font-weight: bold;
@@ -45,6 +42,7 @@ body {
   padding-top: 2%;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 2%;
 }
 
 .card-column {
@@ -69,6 +67,87 @@ body {
   text-align: left;
   color: red;
   font-size: 19px;
+footer {
+  background-color: #239f95;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 2%;
+}
+
+.footer {
+  margin: 0;
+}
+
+.footer-section {
+  color: #FFFFFF;
+  padding: 2%;
+}
+
+.btn-send-sub {
+  background-color: #bb1542;
+  color: #FFFFFF;
+}
+
+.card-body-product {
+  height: 9vh;
+}
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 80vh;
+  z-index: 2000;
+}
+
+.cart ul {
+  list-style: none;
+}
+
+.cart ul li a {
+  display: inline-block;
+  color: #fff;
+  background: #bb1542;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+label {
+  color: grey;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover {
+  color: #ffc107;
+}
+
+input[type=radio]:checked ~ label {
+  color: #ffc107;
+}
+
+.cart-head {
+  background-color: #d9dadb;
+}
+
+.cart-payment {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.detail-product {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .descripcionmodal {

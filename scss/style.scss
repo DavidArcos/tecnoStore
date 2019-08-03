@@ -1,4 +1,4 @@
-$bg-color: #ff3d00;
+$bg-color: #bb1542;
 $bg-body: #d9dadb;
 $bg-color-bestSale: #40c4ff;
 $color-text-main: #FFFFFF;
@@ -13,7 +13,7 @@ $padding-top-main: 2%;
 $padding-cards: 0.5%;
 $card-height: 9vh;
 
-$color-footer: #006064;
+$color-footer: #239f95;
 $color-text-footer: #FFFFFF;
 $padding-footer-section: 2%;
 $bg-color-btn-footer: $bg-color;
@@ -43,12 +43,10 @@ body{
     height: $slide-img-h;
     width: $slide-img-w;
 }
-/* Este es para los elementos en general */
 .navbar-light .navbar-nav .nav-link {
     color: $color-text-main;
     font-weight: $font-main;
 }
-/*  Este es para el elemento activo lo puedes omitir si asi deseas */
 .navbar-light .navbar-nav .active>.nav-link  {
     color: $color-text-main;
     font-weight: $font-main;
@@ -61,6 +59,7 @@ body{
     padding-top: $padding-top-main;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: $padding-top-main;
 }
 .card-column{
     padding: $padding-cards;
@@ -95,10 +94,10 @@ footer{
     height: $card-height;
 }
 .cart {
-	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	right: 0; /* Establecemos la barra en la izquierda */
-	top: 80vh; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+	position: fixed;
+	right: 0;
+	top: 80vh;
+	z-index: 2000;
 }
 .cart ul {
     list-style: none;
@@ -112,13 +111,13 @@ footer{
     text-decoration: none;
     -webkit-transition:all 500ms ease;
     -o-transition:all 500ms ease;
-    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    transition:all 500ms ease;
 }
 label{ color:grey;}
 input[type = "radio"]{ display:none;}
 .clasificacion{
-    direction: rtl;/* right to left */
-    unicode-bidi: bidi-override;/* bidi de bidireccional */
+    direction: rtl;
+    unicode-bidi: bidi-override;
 }
 label:hover{color:$color-stars;}
 
@@ -131,4 +130,8 @@ input[type = "radio"]:checked ~ label{color:$color-stars;}
     background-color: $bg-cart-payment;
     color: $color-text-main;
     font-weight: $font-main;
+}
+.detail-product{
+    margin-top: $padding-top-main;
+    margin-bottom: $padding-top-main;
 }

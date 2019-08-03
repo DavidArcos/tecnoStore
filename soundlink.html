@@ -15,24 +15,38 @@
     <!-- Fotorama from CDNJS, 19 KB -->
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-
-    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tecno Store</title>
 </head>
 <body>
-
-    <div class="container">
-        <div class="row" style="height: 75px">
-            <div class="col-6">
-
-            </div>
-            <div class="col-6">
-
-            </div>
-
+    <div class="cart">
+        <ul>
+            <li><a href="cart.html" class="ion-md-cart">  Tienes 1 Articulo(s) - $1,539.00</a></li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-main">
+        <span class="navbar-brand mb-0 h1"><img src="img/tecnostorelogo.png" width="40" height="40" alt=""></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Categorias</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+            </form>
         </div>
-       <div class="row" style="height: 650px">
-            <div class="col-6">
+    </nav>
+    <div class="container container-main">
+       <div class="row detail-product" >
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <!-- Add images to <div class="fotorama"></div> -->
                     <div class="fotorama" data-nav="thumbs">
                         <img src="img/soundlink2.jpg">
@@ -41,19 +55,16 @@
                         <img src="img/soundlink2.jpg">
                         <img src="img/soundlink3.jpg">
                     </div>
-  
             </div>
-           
-            <div class="col-6 ">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="row h-15">
                     <div class="col">
                             <h2>
                                     Bose SoundLink Revolve Altavoz Bluetooth, color negro 
                             </h2>
                     </div>
-
                 </div>
-                <div class="row" style="height: 500px">
+                <div class="row">
                     <div class="col h-100 text-black-50">
                         <p>
                                 Sonido profundo, fuerte y envolvente, con una verdadera cobertura en 360 grados
@@ -106,7 +117,7 @@
             </div>
             
         </div>
-        <div class="row">
+        <div class="row detail-product">
             <div class="col justify-content-start">
             <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -195,10 +206,65 @@
             </div>
         </div>
     </div>
-
-
-
-
+    <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 footer-section d-flex justify-content-center">
+                <ul class="list-unstyled text-center">
+                    <li><h6>Productos</h6></li>
+                    <li>Tabletas</li>
+                    <li>TV´s HD</li>
+                    <li>Celulares</li>
+                    <li>Consolas de Videojuegos</li>
+                    <li>Teclados</li>
+                    <li>Equipos de Escritorio</li>
+                    <li>Equipos de Sonido</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 footer-section d-flex justify-content-center">
+                <ul class="list-unstyled text-center">
+                    <li><h6>Compañia</h6></li>
+                    <li>Acerca de</li>
+                    <li>Foros</li>
+                    <li>Promociones</li>
+                    <li>Misión</li>
+                    <li>Visión</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 footer-section d-flex justify-content-center">
+                <ul class="list-unstyled text-center">
+                    <li><h6>Contacto</h6></li>
+                    <li><i class="ion-md-pin"></i> Guadalajara, Jalisco</li>
+                    <li><i class="ion-md-call"></i> Llamanos ahora: 999 999</li>
+                    <li><i class="ion-md-mail"></i> Email: tecnoStore@mail.com</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 footer-section d-flex justify-content-center">
+                <ul class="list-unstyled text-center">
+                    <li><h6>Redes Sociales</h6></li>
+                    <li><i class="icon-io ion-logo-facebook"></i></li>
+                    <li><i class="icon-io ion-logo-twitter"></i></li>
+                    <li><i class="icon-io ion-logo-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Suscribete a nuestras promociones.</h5>
+                        <form class="form-group">
+                            <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text btn-send-sub" id="basic-addon1">Enviar</span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
