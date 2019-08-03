@@ -61,6 +61,7 @@ body{
     padding-top: $padding-top-main;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: $padding-top-main;
 }
 .card-column{
     padding: $padding-cards;
@@ -95,10 +96,10 @@ footer{
     height: $card-height;
 }
 .cart {
-	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	right: 0; /* Establecemos la barra en la izquierda */
-	top: 80vh; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+	position: fixed;
+	right: 0;
+	top: 80vh;
+	z-index: 2000;
 }
 .cart ul {
     list-style: none;
