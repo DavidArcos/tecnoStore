@@ -133,3 +133,7 @@ input[type = "radio"]:checked ~ label{color:$color-stars;}
     color: $color-text-main;
     font-weight: $font-main;
 }
+.detail-product{
+    margin-top: $padding-top-main;
+    margin-bottom: $padding-top-main;
+}

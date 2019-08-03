@@ -142,4 +142,9 @@ input[type=radio]:checked ~ label {
   font-weight: bold;
 }
 
+.detail-product {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 /*# sourceMappingURL=style.css.map */
